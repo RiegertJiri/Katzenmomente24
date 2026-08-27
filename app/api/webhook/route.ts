@@ -6,8 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
   apiVersion: "2024-06-20",
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 // This is where new-order emails are sent. Update to your own inbox.
 const SHOP_OWNER_EMAIL = "riegertjiri@gmail.com";
 
@@ -67,7 +66,7 @@ export async function POST(req: NextRequest) {
     // system's API (e.g. forwarding to your warehouse) if needed.
     if (process.env.RESEND_API_KEY) {
       try {
-        await resend.emails.send({
+        await resend?.emails.send({
           from: "Katzenmomente24 <onboarding@resend.dev>",
           to: SHOP_OWNER_EMAIL,
           subject: `Neue Bestellung — ${amount}`,
@@ -101,6 +100,5 @@ Stripe Session: ${fullSession.id}`,
       });
     }
   }
-
-  return NextResponse.json({ received: true });
+  
 }
