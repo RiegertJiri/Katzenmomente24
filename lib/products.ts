@@ -92,7 +92,7 @@ export const bundle = {
     "Die komplette Katzenmomente24-Routine in einem Set: von der Katze direkt in die Bürste, von der Couch mit der Fusselbürste, aus der Wäsche mit den Fusselbällen. Nur als komplettes 3in1-Set erhältlich.",
   image: "/products/set.jpg",
   // Set this once you create the corresponding Price in the Stripe Dashboard.
-  stripePriceId: "price_REPLACE_SET",
+  stripePriceId: "price_1U8y9M0W6EkpiUVjKqcSp2AC",
 };
 
 export function getItemBySlug(slug: string) {
