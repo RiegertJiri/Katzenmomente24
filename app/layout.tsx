@@ -9,7 +9,7 @@ import CartDrawer from "@/components/CartDrawer";
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
-  axes: ["opsz", "SOFT", "WONK"],
+  
   weight: ["400", "500", "600"],
 });
 
