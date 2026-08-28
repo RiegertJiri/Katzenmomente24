@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-line">
       <div className="container-px flex flex-col gap-6 py-12 text-sm text-creamMuted md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="font-display text-lg text-cream">Katzenmomente24</p>
+          <p className="font-display text-2xl text-cream">Katzenmomente24</p>
           <p className="mt-1 max-w-xs">
             Kleine Werkzeuge gegen große Fellmengen. Entwickelt für Katzen-
             und Hundehaushalte in ganz Deutschland.
