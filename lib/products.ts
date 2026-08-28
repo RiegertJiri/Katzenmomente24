@@ -63,7 +63,7 @@ export const includedItems: IncludedItem[] = [
     step: "03",
     stepTitle: "Waschen",
     name: "Fusselbälle",
-    tagline: "Tierhaarentferner für die Waschmaschine.",
+    tagline: "8 Stück - Tierhaarentferner für die Waschmaschine.",
     description:
       "Einfach mit in die Waschtrommel geben: Die Fusselbälle sammeln Tierhaare während des Waschgangs und verhindern, dass sie sich in der Wäsche verfangen.",
     bullets: [
