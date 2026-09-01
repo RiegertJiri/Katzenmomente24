@@ -49,7 +49,7 @@ export default function Navbar() {
               stroke="none"
             />
           </svg>
-          Warenkorb
+          
           {totalCount > 0 && (
             <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-gold px-1 font-mono text-xs text-bg">
               {totalCount}
