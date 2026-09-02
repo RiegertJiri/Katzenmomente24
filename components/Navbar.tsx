@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="container-px flex h-16 items-center justify-between">
         <Link
           href="/"
-          className="font-display text-3x1 tracking-tight text-cream"
+          className="font-display text-3xl tracking-tight text-cream"
         >
           Katzenmomente24
         </Link>
